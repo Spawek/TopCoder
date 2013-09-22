@@ -75,5 +75,16 @@ namespace TopCoderTests
 
             CollectionAssert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            string input = "0";
+
+            string[] actual = binaryCode.decode(input);
+            string[] expected = new string[] { "0", "NONE" };
+
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }
