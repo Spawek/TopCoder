@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopCoder", "TopCoder\TopCoder.csproj", "{4A37854E-5BA9-431C-9D70-DD10443905FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopCoderTests", "TopCoderTests\TopCoderTests.csproj", "{389D5CF3-5F7E-46C6-8D40-A66B60821BF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A37854E-5BA9-431C-9D70-DD10443905FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A37854E-5BA9-431C-9D70-DD10443905FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A37854E-5BA9-431C-9D70-DD10443905FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A37854E-5BA9-431C-9D70-DD10443905FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389D5CF3-5F7E-46C6-8D40-A66B60821BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389D5CF3-5F7E-46C6-8D40-A66B60821BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389D5CF3-5F7E-46C6-8D40-A66B60821BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389D5CF3-5F7E-46C6-8D40-A66B60821BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
