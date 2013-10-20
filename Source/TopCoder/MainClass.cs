@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 namespace TopCoder
 {
     class MainClass
-    {
+    {    
+    	string[] sortByOdds(string[] a)
+    	{
+    		return new string[1];
+    	}
+    	
         static void Main(string[] args)
         {
         }
