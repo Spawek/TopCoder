@@ -4,6 +4,7 @@ using TopCoder;
 
 namespace TopCoderTests
 {
+/*
     [TestClass]
     public class LotteryTests
     {
@@ -144,5 +145,6 @@ namespace TopCoderTests
             CollectionAssert.AreEquivalent(expectedOutput, actual);
         }
     }
+ */
 }
 

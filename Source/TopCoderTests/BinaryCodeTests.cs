@@ -4,6 +4,7 @@ using TopCoder;
 
 namespace TopCoderTests
 {
+    /*
     [TestClass]
     public class BinaryCodeTests
     {
@@ -87,4 +88,5 @@ namespace TopCoderTests
             CollectionAssert.AreEqual(expected, actual);
         }
     }
+     */
 }
