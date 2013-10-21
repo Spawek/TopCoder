@@ -46,6 +46,7 @@
     <Compile Include="BinaryCode.cs" />
     <Compile Include="Lottery.cs" />
     <Compile Include="MainClass.cs" />
+    <Compile Include="PenLift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
