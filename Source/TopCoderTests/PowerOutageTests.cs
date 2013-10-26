@@ -6,6 +6,7 @@ namespace TopCoderTests
     [TestClass]
     public class PowerOutageTests
     {
+        /*
         [TestMethod]
         public void TestMethod0()
         {
@@ -82,6 +83,7 @@ namespace TopCoderTests
 
             Assert.AreEqual(expected, actual);
         }
+         * */
 
 
     }
