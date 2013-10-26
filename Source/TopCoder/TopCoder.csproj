@@ -47,6 +47,7 @@
     <Compile Include="Lottery.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="PenLift.cs" />
+    <Compile Include="PowerOutage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Time.cs" />
   </ItemGroup>

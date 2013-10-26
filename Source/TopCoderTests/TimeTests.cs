@@ -7,6 +7,7 @@ namespace TopCoderTests
     [TestClass]
     public class TimeTests
     {
+        /*
         [TestMethod]
         public void Time0()
         {
@@ -34,5 +35,6 @@ namespace TopCoderTests
             Time t = new Time();
             Assert.AreEqual("23:59:59", t.whatTime(86399));
         }
+         */
     }
 }

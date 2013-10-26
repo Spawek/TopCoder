@@ -55,6 +55,7 @@
     <Compile Include="LotteryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeTests.cs" />
+    <Compile Include="PowerOutageTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TopCoder\TopCoder.csproj">
