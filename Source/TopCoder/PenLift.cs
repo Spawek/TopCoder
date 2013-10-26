@@ -28,6 +28,8 @@ namespace TopCoder
      *      
      *      Doliczyć kary za miejsca, w których się nie dało
      *      
+     *      -- TO CHYBA NIE ZADZIAŁA DLA PRZYKŁADU Z KRATKĄ
+     *      
      *      Zsumować kary + miejsca do których trzeba przeskoczyć 
      *      (i nie spierdolić w tym prostym miejscu - trzeba to jeszcze rozpisać)
      *      
