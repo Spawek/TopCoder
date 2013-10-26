@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryCode.cs" />
+    <Compile Include="ExerciseMachine.cs" />
     <Compile Include="ImageDithering.cs" />
     <Compile Include="Lottery.cs" />
     <Compile Include="MainClass.cs" />

@@ -57,6 +57,7 @@
     <Compile Include="TimeTests.cs" />
     <Compile Include="PowerOutageTests.cs" />
     <Compile Include="ImageDitheringTest.cs" />
+    <Compile Include="ExerciseMachineTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TopCoder\TopCoder.csproj">
