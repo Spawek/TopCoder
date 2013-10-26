@@ -48,6 +48,7 @@
     <Compile Include="MainClass.cs" />
     <Compile Include="PenLift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

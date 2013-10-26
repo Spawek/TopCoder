@@ -54,6 +54,7 @@
     <Compile Include="BinaryCodeTests.cs" />
     <Compile Include="LotteryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TopCoder\TopCoder.csproj">

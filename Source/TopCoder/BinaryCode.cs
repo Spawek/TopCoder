@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 /* all basic test passed: 17:14 */
 /* 109.9 / 300 pts on submit */ //but how it works??? //im not sure what was the resoult
 /* 90.0 on second sumbmit (all tests passed) -10% - after adding BULLSHIT code (but not chaning time complexity from linear) */
+
+/* its based on time - when I found this problem for a 2nd time and sumbitted it again i get 549.55 points - be quick! (od dead!) ;)*/
 public class BinaryCode
 {
     public string[] decode(string inputString)
