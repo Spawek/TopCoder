@@ -29,6 +29,8 @@ namespace TopCoderTestGenerator
         {
             TopCoderTaskParser parser = new TopCoderTaskParser();
             ParsedTopCoderTask task = parser.Parse(TextBox_Input.Text);
+            TopCoderFileGenerator generator = new TopCoderFileGenerator();
+            TextBox_Output.Text = generator.generate(task);
         }
     }
 }

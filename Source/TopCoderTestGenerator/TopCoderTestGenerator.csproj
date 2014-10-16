@@ -55,6 +55,7 @@
     </ApplicationDefinition>
     <Compile Include="ParsedTopCoderTask.cs" />
     <Compile Include="TopCoderExample.cs" />
+    <Compile Include="TopCoderFileGenerator.cs" />
     <Compile Include="TopCoderTaskParser.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

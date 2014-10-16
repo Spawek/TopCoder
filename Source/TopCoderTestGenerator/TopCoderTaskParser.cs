@@ -27,9 +27,13 @@ namespace TopCoderTestGenerator
             currLine++;
             parsed.ClassName = lines[currLine];
 
+            while (lines[currLine] != "Method:") currLine++;
+            currLine++;
+            parsed.Method = lines[currLine];
+
             while (lines[currLine] != "Method signature:") currLine++;
             currLine++;
-            parsed.MethodSignature = "public " + lines[currLine];
+            parsed.MethodSignature = lines[currLine];
 
             while (lines[currLine] != "Time limit (s):") currLine++;
             currLine++;
