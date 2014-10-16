@@ -139,7 +139,7 @@ namespace TopCoderTestGenerator
         private void appendTimeComments(List<string> output)
         {
             output.Add(String.Empty);
-            output.Add("/* start time: xx:xx */");
+            output.Add("/* start time: " + DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString() + " */");
             output.Add("/* all basic test passed: xx:xx */");
             output.Add("/* xxx / xxx pts on submit */");
         }
