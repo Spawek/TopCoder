@@ -101,7 +101,7 @@ namespace TopCoderTestGenerator
             output.Add(String.Empty);
             output.Add("/**");
             output.Add(" * PROBLEM STATEMENT: ");
-            output.Add(task.ProblemStatement.Replace("\r\n", "\r\n * "));
+            output.Add(" * " + task.ProblemStatement.Replace("\r\n", "\r\n * "));
             output.Add(" */");
         }
 
