@@ -54,25 +54,24 @@ namespace TopCoderTestGenerator
                 currLine++;
             }
 
-            string currExample = "";
-            bool insideExample = false;
+            currLine++;
+            string currExample = String.Empty;
             while (currLine < lines.Length)
             {
-                if (insideExample && Regex.IsMatch(lines[currLine], "[0-9]*\\)") ||
-                    Regex.IsMatch(lines[currLine], "This problem statement.*"))
+                if (Regex.IsMatch(lines[currLine], "This problem statement.*"))
+                {
+                    if(currExample != String.Empty) parsed.Examples.Add(new TopCoderExample(currExample));
+                    break;
+                }
+
+                if (currExample != String.Empty && Regex.IsMatch(lines[currLine], "^[0-9]*\\)"))
                 {
                     parsed.Examples.Add(new TopCoderExample(currExample));
-                    insideExample = false;
+                    currExample = String.Empty;
                 }
-                if (!insideExample && Regex.IsMatch(lines[currLine], "[0-9]*\\)"))
-                {
-                    currExample = "";
-                    insideExample = true;
-                }
-                if (insideExample)
-                {
-                    currExample += lines[currLine] + "\r\n";
-                }
+
+                currExample += lines[currLine] + "\r\n";
+
                 currLine++;
             }
 

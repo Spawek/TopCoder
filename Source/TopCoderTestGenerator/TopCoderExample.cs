@@ -11,6 +11,7 @@ namespace TopCoderTestGenerator
         public int testCaseNo;
         public List<string> inputs = new List<string>();
         public string expectedOutput;
+        public string comment = String.Empty;
 
         public TopCoderExample(string str)
         {
@@ -26,6 +27,13 @@ namespace TopCoderTestGenerator
                 currLine++;
             }
             expectedOutput = splittedStr[currLine].Replace("Returns: ", String.Empty);
+            currLine++;
+
+            while (currLine != splittedStr.Length)
+            {
+                comment += splittedStr[currLine];
+                currLine++;
+            }
         }
     }
 }

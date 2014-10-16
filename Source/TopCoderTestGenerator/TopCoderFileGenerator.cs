@@ -61,6 +61,7 @@ namespace TopCoderTestGenerator
             string objName = task.ClassName.ToLower();
 
             output.Add(String.Empty);
+            if (example.comment != String.Empty) output.Add("\t//" + example.comment);
             output.Add("\t[TestMethod]");
             output.Add("\t public void TestCase" + example.testCaseNo.ToString() + "()");
             output.Add("\t{");
