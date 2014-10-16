@@ -31,6 +31,10 @@ namespace TopCoderTestGenerator
             currLine++;
             parsed.Method = lines[currLine];
 
+            while (lines[currLine] != "Parameters:") currLine++;
+            currLine++;
+            parsed.Parameters = lines[currLine].Split(new string[]{", "}, StringSplitOptions.RemoveEmptyEntries);
+
             while (lines[currLine] != "Method signature:") currLine++;
             currLine++;
             parsed.MethodSignature = lines[currLine];

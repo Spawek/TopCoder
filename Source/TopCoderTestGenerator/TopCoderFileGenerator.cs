@@ -65,7 +65,24 @@ namespace TopCoderTestGenerator
             output.Add("\t public void TestCase" + example.testCaseNo.ToString() + "()");
             output.Add("\t{");
             output.Add("\t\t" + task.ClassName + " " + objName + " = new " + task.ClassName + "();");
-            output.Add("\t\tAssert.AreEqual(" + example.expectedOutput + ", " + objName + "." + task.Method + "(" + example.input + ");");
+
+            string assertLine = String.Empty;
+            assertLine += "\t\tAssert.AreEqual(" + example.expectedOutput + ", " + objName + "." + task.Method + "(";
+            for (int i = 0; i < example.inputs.Count; i++)
+			{
+                if (i != 0) assertLine += ", ";
+                if (task.Parameters[i].Contains("[]"))
+                {
+                    assertLine += "new " + task.Parameters[i] + example.inputs[i];
+                }
+                else
+                {
+                    assertLine += example.inputs[i];
+                }
+	        }
+            assertLine += "));";
+
+            output.Add(assertLine);
             output.Add("\t}");
         }
 

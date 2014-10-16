@@ -9,7 +9,7 @@ namespace TopCoderTestGenerator
     public class TopCoderExample
     {
         public int testCaseNo;
-        public string input;
+        public List<string> inputs = new List<string>();
         public string expectedOutput;
 
         public TopCoderExample(string str)
@@ -18,8 +18,14 @@ namespace TopCoderTestGenerator
             string[] splittedStr = str.Split(new string[]{"\r\n"}, StringSplitOptions.RemoveEmptyEntries);
 
             testCaseNo = Convert.ToInt32(splittedStr[0].Substring(0, splittedStr[0].Length - 1));
-            input = splittedStr[2];
-            expectedOutput = splittedStr[3].Replace("Returns: ", String.Empty);
+
+            int currLine = 2;
+            while (!splittedStr[currLine].Contains("Returns"))
+            {
+                inputs.Add(splittedStr[currLine]);
+                currLine++;
+            }
+            expectedOutput = splittedStr[currLine].Replace("Returns: ", String.Empty);
         }
     }
 }

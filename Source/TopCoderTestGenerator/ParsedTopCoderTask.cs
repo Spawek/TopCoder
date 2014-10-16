@@ -11,6 +11,7 @@ namespace TopCoderTestGenerator
         public string ClassName = "";
         public string MethodSignature = "";
         public string Method = "";
+        public string[] Parameters;
         public string TimeLimit = "";
         public string MemoryLimit = "";
         public string Constraints = "";
